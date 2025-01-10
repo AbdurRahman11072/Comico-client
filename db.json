@@ -1,0 +1,300 @@
+{
+  "slider": [
+    {
+      "id": 1,
+      "title": "Demon Hunter",
+      "coverImg": "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
+      "tags": ["Action", "Comedy", "Adventure"]
+    },
+    {
+      "id": 2,
+      "title": "Overlord of the underworld",
+      "coverImg": "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+      "tags": ["Drama", "Mystery"]
+    },
+    {
+      "id": 3,
+      "title": "Squed Game",
+      "coverImg": "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
+      "tags": ["Fantasy", "Sci-Fi"]
+    },
+    {
+      "id": 4,
+      "title": "Squed Game",
+      "coverImg": "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
+      "tags": ["Fantasy", "Sci-Fi"]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "1",
+      "title": "Demon Hunter",
+      "chapters": [
+        {
+          "chapterId": "1",
+          "chapter": "Chapter 1",
+          "chapterTitle": "The Beginning",
+          "releaseDate": "2025-01-01",
+          "views": 10500,
+          "likes": 1500,
+          "timestamp": "2025-01-01T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/1",
+          "tags": ["adventure", "fantasy"],
+          "images": [
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp"
+          ]
+        },
+        {
+          "chapterId": "2",
+          "chapter": "Chapter 2",
+          "chapterTitle": "The Journey",
+          "releaseDate": "2025-01-08",
+          "views": 8900,
+          "likes": 1200,
+          "timestamp": "2025-01-08T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/2",
+          "tags": ["adventure", "drama"],
+          "images": [
+            "https://example.com/comics/12345/chapters/2/images/1.jpg",
+            "https://example.com/comics/12345/chapters/2/images/2.jpg",
+            "https://example.com/comics/12345/chapters/2/images/3.jpg"
+          ]
+        },
+        {
+          "chapterId": "3",
+          "chapter": "Chapter 3",
+          "chapterTitle": "The Encounter",
+          "releaseDate": "2025-01-15",
+          "views": 7500,
+          "likes": 1100,
+          "timestamp": "2025-01-15T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/3",
+          "tags": ["adventure", "mystery"],
+          "images": [
+            "https://example.com/comics/12345/chapters/3/images/1.jpg",
+            "https://example.com/comics/12345/chapters/3/images/2.jpg",
+            "https://example.com/comics/12345/chapters/3/images/3.jpg"
+          ]
+        },
+        {
+          "chapterId": "4",
+          "chapter": "Chapter 4",
+          "chapterTitle": "The Beginning",
+          "releaseDate": "2025-01-01",
+          "views": 10500,
+          "likes": 1500,
+          "timestamp": "2025-01-01T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/1",
+          "tags": ["adventure", "fantasy"],
+          "images": [
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp"
+          ]
+        },
+        {
+          "chapterId": "5",
+          "chapter": "Chapter 5",
+          "chapterTitle": "The Journey",
+          "releaseDate": "2025-01-08",
+          "views": 8900,
+          "likes": 1200,
+          "timestamp": "2025-01-08T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/2",
+          "tags": ["adventure", "drama"],
+          "images": [
+            "https://example.com/comics/12345/chapters/2/images/1.jpg",
+            "https://example.com/comics/12345/chapters/2/images/2.jpg",
+            "https://example.com/comics/12345/chapters/2/images/3.jpg"
+          ]
+        },
+        {
+          "chapterId": "6",
+          "chapter": "Chapter 6",
+          "chapterTitle": "The Beginning",
+          "releaseDate": "2025-01-01",
+          "views": 10500,
+          "likes": 1500,
+          "timestamp": "2025-01-01T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/1",
+          "tags": ["adventure", "fantasy"],
+          "images": [
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp"
+          ]
+        },
+        {
+          "chapterId": "7",
+          "chapter": "Chapter 7",
+          "chapterTitle": "The Journey",
+          "releaseDate": "2025-01-08",
+          "views": 8900,
+          "likes": 1200,
+          "timestamp": "2025-01-08T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/2",
+          "tags": ["adventure", "drama"],
+          "images": [
+            "https://example.com/comics/12345/chapters/2/images/1.jpg",
+            "https://example.com/comics/12345/chapters/2/images/2.jpg",
+            "https://example.com/comics/12345/chapters/2/images/3.jpg"
+          ]
+        },
+        {
+          "chapterId": "8",
+          "chapter": "Chapter 8",
+          "chapterTitle": "The Encounter",
+          "releaseDate": "2025-01-15",
+          "views": 7500,
+          "likes": 1100,
+          "timestamp": "2025-01-15T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/3",
+          "tags": ["adventure", "mystery"],
+          "images": [
+            "https://example.com/comics/12345/chapters/3/images/1.jpg",
+            "https://example.com/comics/12345/chapters/3/images/2.jpg",
+            "https://example.com/comics/12345/chapters/3/images/3.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Demon Hunter",
+      "chapters": [
+        {
+          "chapterId": "1",
+          "chapter": "Chapter 1",
+          "chapterTitle": "The Beginning",
+          "releaseDate": "2025-01-01",
+          "views": 10500,
+          "likes": 1500,
+          "timestamp": "2025-01-01T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/1",
+          "tags": ["adventure", "fantasy"],
+          "images": [
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp"
+          ]
+        },
+        {
+          "chapterId": "2",
+          "chapter": "Chapter 2",
+          "chapterTitle": "The Journey",
+          "releaseDate": "2025-01-08",
+          "views": 8900,
+          "likes": 1200,
+          "timestamp": "2025-01-08T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/2",
+          "tags": ["adventure", "drama"],
+          "images": [
+            "https://example.com/comics/12345/chapters/2/images/1.jpg",
+            "https://example.com/comics/12345/chapters/2/images/2.jpg",
+            "https://example.com/comics/12345/chapters/2/images/3.jpg"
+          ]
+        },
+        {
+          "chapterId": "3",
+          "chapter": "Chapter 3",
+          "chapterTitle": "The Encounter",
+          "releaseDate": "2025-01-15",
+          "views": 7500,
+          "likes": 1100,
+          "timestamp": "2025-01-15T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/3",
+          "tags": ["adventure", "mystery"],
+          "images": [
+            "https://example.com/comics/12345/chapters/3/images/1.jpg",
+            "https://example.com/comics/12345/chapters/3/images/2.jpg",
+            "https://example.com/comics/12345/chapters/3/images/3.jpg"
+          ]
+        }
+      ]
+    }
+  ],
+  "series": [
+    {
+      "id": "1",
+      "title": "Solo leveling",
+      "chineseTitle": "示例漫画系列",
+      "description": "A thrilling series of adventure and mystery.",
+      "genres": ["adventure", "fantasy", "mystery"],
+      "author": "John Doe",
+      "artist": "Jane Smith",
+      "status": "Ongoing",
+      "releaseDate": "2025-01-01",
+      "rating": 4.8,
+      "views": 500000,
+      "likes": 25000,
+      "coverImg": "https://i.ibb.co.com/fp8MHb3/download.jpg",
+      "sliderImage": "https://i.ibb.co.com/r6tqb0x/The-Descent-of-the-Demonic-Master-Thumb.webp"
+    },
+    {
+      "id": "2",
+      "title": "Solo leveling",
+      "chineseTitle": "示例漫画系列",
+      "description": "A thrilling series of adventure and mystery.",
+      "genres": ["adventure", "fantasy", "mystery"],
+      "author": "John Doe",
+      "artist": "Jane Smith",
+      "status": "Ongoing",
+      "releaseDate": "2025-01-01",
+      "rating": 4.8,
+      "views": 500000,
+      "likes": 25000,
+      "coverImg": "https://i.ibb.co.com/x5pZrLn/I-am-the-strongest-awakeners-recognized-by-all-of-the-world-s-cheat-masters-COVER-VORTEXNW.webp",
+      "sliderImage": "https://i.ibb.co.com/r6tqb0x/The-Descent-of-the-Demonic-Master-Thumb.webp"
+    },
+    {
+      "id": "3",
+      "title": "Hunter X Hunter",
+      "chineseTitle": "示例漫画系列",
+      "description": "A thrilling series of adventure and mystery.",
+      "genres": ["adventure", "fantasy", "mystery"],
+      "author": "John Doe",
+      "artist": "Jane Smith",
+      "status": "Ongoing",
+      "releaseDate": "2025-01-01",
+      "rating": 4.8,
+      "views": 500000,
+      "likes": 25000,
+      "coverImg": "https://i.ibb.co.com/4tZm2Sq/Juvenile-Law29.webp",
+      "sliderImage": "https://i.ibb.co.com/r6tqb0x/The-Descent-of-the-Demonic-Master-Thumb.webp"
+    },
+    {
+      "id": "4",
+      "title": "Solo leveling",
+      "chineseTitle": "示例漫画系列",
+      "description": "A thrilling series of adventure and mystery.",
+      "genres": ["adventure", "fantasy", "mystery"],
+      "author": "John Doe",
+      "artist": "Jane Smith",
+      "status": "Ongoing",
+      "releaseDate": "2025-01-01",
+      "rating": 4.8,
+      "views": 500000,
+      "likes": 25000,
+      "coverImg": "https://i.ibb.co.com/x5pZrLn/I-am-the-strongest-awakeners-recognized-by-all-of-the-world-s-cheat-masters-COVER-VORTEXNW.webp",
+      "sliderImage": "https://i.ibb.co.com/r6tqb0x/The-Descent-of-the-Demonic-Master-Thumb.webp"
+    },
+    {
+      "id": "5",
+      "title": "The Descent of the Demonic Master Thumb",
+      "chineseTitle": "示例漫画系列",
+      "description": "A thrilling series of adventure and mystery.",
+      "genres": ["adventure", "fantasy", "mystery"],
+      "author": "John Doe",
+      "artist": "Jane Smith",
+      "status": "Ongoing",
+      "releaseDate": "2025-01-01",
+      "rating": 4.8,
+      "views": 500000,
+      "likes": 25000,
+      "coverImg": "https://i.ibb.co.com/60y8zgr/image.png",
+      "sliderImage": "https://i.ibb.co.com/r6tqb0x/The-Descent-of-the-Demonic-Master-Thumb.webp"
+    }
+  ]
+}
