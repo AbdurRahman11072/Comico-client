@@ -13,7 +13,7 @@ const Slider = async () => {
       <div className="flex gap-3 overflow-x-scroll overflow-y-hidden">
         {sliderData?.map((slider: any) => (
           <div
-            className="flex-shrink-0 w-[80%] md:w-[45%] lg:w-[32.5%] h-[244px] sm:h-72 xl:h-96 bg-slate-700 rounded-lg overflow-hidden relative"
+            className="flex-shrink-0 w-[90%] md:w-[45%] lg:w-[32.5%] h-[244px] sm:h-72 xl:h-96 bg-slate-700 rounded-lg overflow-hidden relative"
             key={slider?.id}
           >
             <img src={slider?.coverImg} alt={slider?.title} />
