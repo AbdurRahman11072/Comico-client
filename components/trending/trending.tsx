@@ -49,7 +49,7 @@ const TrendingSection = () => {
   const filters: TimeFilter[] = ["Today", "Weekly", "Monthly"];
 
   return (
-    <div className="bg-[#0f1115] text-white p-3 max-w-md">
+    <div className="bg-[#0f1115] text-white p-3 w-full lg:max-w-xl">
       <div className="flex items-center gap-2 mb-6">
         <BsTrophy className="text-white" />
         <h2 className="text-xl font-semibold">Trending</h2>

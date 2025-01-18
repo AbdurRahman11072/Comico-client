@@ -6,7 +6,7 @@ const HomeLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="mx-auto mb-20 md:mb-0">
       <Navbar />
-      <main className="mt-14 p-2  ">{children}</main>
+      <main className=" p-2  ">{children}</main>
       <Footer />
     </div>
   );

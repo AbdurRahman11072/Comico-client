@@ -58,9 +58,9 @@ export default function ComicSlider() {
                 <img
                   src={comic.image}
                   alt={comic.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover "
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute top-4 left-4 flex gap-2">
                   <span className="px-2 py-1 rounded-md bg-black/50 text-white text-sm">
                     COMIC
@@ -77,7 +77,7 @@ export default function ComicSlider() {
                   )}
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="mb-2 text-2xl font-bold text-white drop-shadow-lg">
+                  <h3 className="mb-2 text-2xl font-bold text-white drop-shadow-2xl shadow-2xl">
                     {comic.title}
                   </h3>
                   <div className="flex flex-wrap gap-2">

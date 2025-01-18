@@ -22,7 +22,7 @@ const Series = async () => {
                 alt="comic-series-image"
                 width={300}
                 height={400}
-                className="rounded-md h-[220px]  md:h-[250px] lg:h-[300px] "
+                className="rounded-md h-[220px]  md:h-[250px] lg:h-[240px] xl:h-[300px] "
               />
               <div className="space-y-2">
                 <div className="flex justify-between px-2 my-2 text-sm">
@@ -38,16 +38,20 @@ const Series = async () => {
                     : series.title}
                 </p>
                 <div className="flex justify-between items-center px-2 py-[5px] h-9 bg-slate-400/10 hover:md:bg-slate-400/10  rounded-sm">
-                  <p className="text-sm font-medium md:font-semibold ">
-                    chapter 1000
+                  <p className="text-sm font-medium md:font-semibold xl:text-md ">
+                    Chapter 1000
                   </p>
-                  <p className="font-medium text-xs md:text-sm">1 Days ago</p>
+                  <p className="font-medium text-xs md:text-sm lg:text-xs xl:text-sm ">
+                    1 Days
+                  </p>
                 </div>
                 <div className="flex justify-between items-center px-2 py-[5px] h-9 bg-slate-400/10 hover:md:bg-slate-400/10  rounded-sm">
-                  <p className="text-sm font-medium md:font-semibold ">
-                    chapter 1000
+                  <p className="text-sm font-medium md:font-semibold xl:text-md ">
+                    Chapter 1000
                   </p>
-                  <p className="font-medium text-xs md:text-sm">1 Days ago</p>
+                  <p className="font-medium text-xs md:text-sm lg:text-xs xl:text-sm ">
+                    1 Days
+                  </p>
                 </div>
               </div>
             </div>

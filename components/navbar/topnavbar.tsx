@@ -9,7 +9,7 @@ import SearchModal from "../modal/searchModal";
 const TopNavBar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className="fixed top-0  z-50 bg-blue-950/50 flex w-full h-14  ">
+    <div className="fixed top-0  z-50 bg-black/50 flex w-full h-14  ">
       <div className="w-full container mx-auto flex gap-4 items-center  justify-between px-3 border-b-1 border-gray-500">
         <div className="flex gap-4 items-center">
           <h1 className="text-2xl font-bold">Comico</h1>

@@ -16,7 +16,7 @@ const MainContent = async ({ mainDetails }: { mainDetails: mainDetails }) => {
   const details = { description, chapterdata };
   return (
     <div className="space-y-6">
-      <div className="border-b border-gray-800">
+      <div className="border-b border-slate-400">
         <div className="py-4">
           <h1 className="text-xl font-bold mb-1 md:text-2xl ">{title}</h1>
           <div className="text-sm text-gray-400">{chineseTitle}</div>

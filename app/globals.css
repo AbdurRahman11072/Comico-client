@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
 body {
-  background-image: url("../assets/Background.png");
-  background-size: cover;
-  background-position: center;
+  color: var(--foreground);
+  background: var(--background);
 }

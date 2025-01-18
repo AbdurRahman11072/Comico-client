@@ -68,7 +68,7 @@ export default function DashboardSidebar() {
       </button>
 
       <aside
-        className={`fixed inset-y-0 left-0 z-10 w-64 h-screen bg-black/55 text-white transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 ${
+        className={`fixed inset-y-0 left-0 z-10 w-64 h-screen bg-black lg:bg-black/55 text-white transform transition-transform duration-300 ease-in-out lg:relative lg:translate-x-0 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -86,7 +86,7 @@ export default function DashboardSidebar() {
             {menuItems.map((item, index) => (
               <li key={index} className=" w-56 mx-auto  rounded-lg">
                 <div
-                  className={`flex items-center justify-between p-4 cursor-pointer hover:bg-gradient-to-r from-[#0349fc]/55 via-[#0349fc]/55 transition-colors  rounded-lg ease-linear ${
+                  className={`flex items-center justify-between p-4 cursor-pointer md:hover:bg-gradient-to-r from-[#00A9FF] via-[#00A9FF] transition-colors  rounded-lg ease-linear ${
                     item.submenu ? "relative" : ""
                   }`}
                   onClick={() => item.submenu && toggleSubmenu(index)}
