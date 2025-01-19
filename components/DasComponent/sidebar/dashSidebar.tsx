@@ -15,6 +15,7 @@ import {
   FiChevronUp,
 } from "react-icons/fi";
 import { BiHome } from "react-icons/bi";
+import { usePathname } from "next/navigation";
 
 const menuItems = [
   {
@@ -25,10 +26,9 @@ const menuItems = [
   {
     icon: FiBook,
     text: "Comics",
-    href: "/dashboard/comics",
     submenu: [
       { text: "All Comics", href: "/dashboard/comics/all" },
-      { text: "Add New", href: "/dashboard/comics/new" },
+      { text: "Add New", href: "/admin/addseries" },
     ],
   },
   { icon: FiUsers, text: "Users", href: "/dashboard/users" },
@@ -36,7 +36,6 @@ const menuItems = [
   {
     icon: FiBell,
     text: "Notifications",
-    href: "/dashboard/notifications",
     submenu: [
       { text: "All Notifications", href: "/dashboard/notifications/all" },
       { text: "Settings", href: "/dashboard/notifications/settings" },
@@ -48,11 +47,14 @@ const menuItems = [
 
 export default function DashboardSidebar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [expandedMenu, setExpandedMenu] = useState(null);
+  const [expandedMenu, setExpandedMenu] = useState<number | null>(null);
+  const pathname = usePathname();
 
-  const toggleSubmenu = (index: any) => {
+  const toggleSubmenu = (index: number) => {
     setExpandedMenu(expandedMenu === index ? null : index);
   };
+
+  const isActive = (href: string) => pathname === href;
 
   return (
     <div className="">
@@ -84,42 +86,60 @@ export default function DashboardSidebar() {
         <nav>
           <ul>
             {menuItems.map((item, index) => (
-              <li key={index} className=" w-56 mx-auto  rounded-lg">
-                <div
-                  className={`flex items-center justify-between p-4 cursor-pointer md:hover:bg-gradient-to-r from-[#00A9FF] via-[#00A9FF] transition-colors  rounded-lg ease-linear ${
-                    item.submenu ? "relative" : ""
-                  }`}
-                  onClick={() => item.submenu && toggleSubmenu(index)}
-                >
-                  <div className="flex items-center">
-                    <item.icon className="w-6 h-6" />
-                    <span className="ml-4">{item.text}</span>
+              <li key={index} className="w-56 mx-auto rounded-lg">
+                {item.submenu ? (
+                  <div>
+                    <button
+                      className={`flex items-center justify-between p-4 cursor-pointer w-full md:hover:bg-gray-800 transition-colors rounded-lg ease-linear`}
+                      onClick={() => toggleSubmenu(index)}
+                    >
+                      <div className="flex items-center">
+                        <item.icon className="w-6 h-6" />
+                        <span className="ml-4">{item.text}</span>
+                      </div>
+                      {expandedMenu === index ? (
+                        <FiChevronUp className="w-5 h-5" />
+                      ) : (
+                        <FiChevronDown className="w-5 h-5" />
+                      )}
+                    </button>
+                    <ul
+                      className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${
+                        expandedMenu === index ? "max-h-screen" : "max-h-0"
+                      }`}
+                    >
+                      {item.submenu.map((subItem, subIndex) => (
+                        <li key={subIndex}>
+                          <Link
+                            href={subItem.href}
+                            className={`block p-2 pl-16 md:hover:bg-gradient-to-r from-[#2D3999] to-[#00A9FF] rounded-md transition-colors ${
+                              isActive(subItem.href)
+                                ? "bg-gradient-to-r from-[#2D3999] to-[#00A9FF]"
+                                : ""
+                            }`}
+                            onClick={() => setIsOpen(false)}
+                          >
+                            {subItem.text}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  {item.submenu &&
-                    (expandedMenu === index ? (
-                      <FiChevronUp className="w-5 h-5" />
-                    ) : (
-                      <FiChevronDown className="w-5 h-5" />
-                    ))}
-                </div>
-                {item.submenu && (
-                  <ul
-                    className={`overflow-hidden transition-[max-height] duration-300 ease-in-out ${
-                      expandedMenu === index ? "max-h-screen" : "max-h-0"
+                ) : (
+                  <Link
+                    href={item.href}
+                    className={`flex items-center justify-between p-4 cursor-pointer md:hover:bg-gradient-to-r from-[#2D3999] to-[#00A9FF] transition-colors rounded-lg ease-linear ${
+                      isActive(item.href)
+                        ? "bg-gradient-to-r from-[#2D3999] to-[#00A9FF]"
+                        : ""
                     }`}
+                    onClick={() => setIsOpen(false)}
                   >
-                    {item.submenu.map((subItem, subIndex) => (
-                      <li key={subIndex}>
-                        <Link
-                          href={subItem.href}
-                          className="block p-2 pl-16 hover:bg-gray-800 rounded-md transition-colors"
-                          onClick={() => setIsOpen(false)}
-                        >
-                          {subItem.text}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                    <div className="flex items-center">
+                      <item.icon className="w-6 h-6" />
+                      <span className="ml-4">{item.text}</span>
+                    </div>
+                  </Link>
                 )}
               </li>
             ))}

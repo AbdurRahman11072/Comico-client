@@ -46,7 +46,7 @@ const comics: Comic[] = [
 
 export default function ComicSlider() {
   return (
-    <div className="container mx-auto overflow-hidden bg-black p-4">
+    <div className="container mx-auto overflow-hidden bg-black p-4 mt-14">
       <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
         {comics.map((comic) => (
           <div
