@@ -8,7 +8,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
       <DashboardSidebar />
       <div className="flex flex-col flex-1 overflow-hidden">
         <TopBar />
-        <main className="flex-1 overflow-y-auto p-2 transition-all duration-300 ease-in-out ">
+        <main className="flex-1 overflow-y-auto p-8 transition-all duration-300 ease-in-out ">
           {children}
         </main>
       </div>

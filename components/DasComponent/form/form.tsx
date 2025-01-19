@@ -42,7 +42,7 @@ const SeriesForm = () => {
     "mt-1 block w-full rounded-md border-2 border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 bg-transparent px-3 py-2 text-white transition duration-200 ease-in-out hover:border-gray-400";
 
   return (
-    <form className="max-w-4xl mx-auto p-6 space-y-6 bg-black/55 rounded-md">
+    <form className="w-full lg:max-w-3xl mx-auto p-6 space-y-6 bg-gradient-to-r from-[#01062b] to-[#0e0f0f]/65 rounded-md">
       <div className="space-y-2">
         <label htmlFor="image" className="block text-md font-medium text-white">
           Cover Image
@@ -124,7 +124,7 @@ const SeriesForm = () => {
         <div className="space-y-2">
           <label
             htmlFor="artistName"
-            className="block text-sm font-medium text-gray-400"
+            className="block text-sm font-medium text-white"
           >
             Artist Name
           </label>
@@ -141,7 +141,7 @@ const SeriesForm = () => {
         <div className="space-y-2">
           <label
             htmlFor="status"
-            className="block text-sm font-medium text-gray-400"
+            className="block text-sm font-medium text-white"
           >
             Status
           </label>
@@ -166,7 +166,7 @@ const SeriesForm = () => {
         <div className="space-y-2">
           <label
             htmlFor="genres"
-            className="block text-sm font-medium text-gray-400"
+            className="block text-sm font-medium text-white"
           >
             Genres
           </label>
@@ -182,7 +182,7 @@ const SeriesForm = () => {
       <div className="space-y-2">
         <label
           htmlFor="description"
-          className="block text-sm font-medium text-gray-400"
+          className="block text-sm font-medium text-white"
         >
           Description (Max 1000 characters)
         </label>

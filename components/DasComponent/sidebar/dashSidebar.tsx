@@ -27,22 +27,22 @@ const menuItems = [
     icon: FiBook,
     text: "Comics",
     submenu: [
-      { text: "All Comics", href: "/dashboard/comics/all" },
+      { text: "All Comics", href: "/admin/allcomic" },
       { text: "Add New", href: "/admin/addseries" },
     ],
   },
-  { icon: FiUsers, text: "Users", href: "/dashboard/users" },
-  { icon: FiPieChart, text: "Analytics", href: "/dashboard/analytics" },
+  { icon: FiUsers, text: "Users", href: "/admin/users" },
+  { icon: FiPieChart, text: "Analytics", href: "/admin/analytics" },
   {
     icon: FiBell,
     text: "Notifications",
     submenu: [
-      { text: "All Notifications", href: "/dashboard/notifications/all" },
+      { text: "All Notifications", href: "/admin/notifications" },
       { text: "Settings", href: "/dashboard/notifications/settings" },
     ],
   },
-  { icon: FiDollarSign, text: "Monetization", href: "/dashboard/monetization" },
-  { icon: FiSettings, text: "Settings", href: "/dashboard/settings" },
+  { icon: FiDollarSign, text: "Monetization", href: "/admin/monetization" },
+  { icon: FiSettings, text: "Settings", href: "/admin/settings" },
 ];
 
 export default function DashboardSidebar() {
@@ -90,7 +90,7 @@ export default function DashboardSidebar() {
                 {item.submenu ? (
                   <div>
                     <button
-                      className={`flex items-center justify-between p-4 cursor-pointer w-full md:hover:bg-gray-800 transition-colors rounded-lg ease-linear`}
+                      className={`flex items-center justify-between p-4 cursor-pointer w-full md:hover:bg-gradient-to-r from-[#2D3999] to-[#00A9FF] transition-colors rounded-lg ease-linear`}
                       onClick={() => toggleSubmenu(index)}
                     >
                       <div className="flex items-center">
@@ -109,7 +109,7 @@ export default function DashboardSidebar() {
                       }`}
                     >
                       {item.submenu.map((subItem, subIndex) => (
-                        <li key={subIndex}>
+                        <li key={subIndex} className="mb-1">
                           <Link
                             href={subItem.href}
                             className={`block p-2 pl-16 md:hover:bg-gradient-to-r from-[#2D3999] to-[#00A9FF] rounded-md transition-colors ${
