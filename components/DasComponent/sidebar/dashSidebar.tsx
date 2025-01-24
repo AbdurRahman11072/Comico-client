@@ -27,7 +27,7 @@ const menuItems = [
     icon: FiBook,
     text: "Comics",
     submenu: [
-      { text: "All Comics", href: "/admin/allcomic" },
+      { text: "All Comics", href: "/admin/allseries" },
       { text: "Add New", href: "/admin/addseries" },
     ],
   },
@@ -86,7 +86,7 @@ export default function DashboardSidebar() {
         <nav>
           <ul>
             {menuItems.map((item, index) => (
-              <li key={index} className="w-56 mx-auto rounded-lg">
+              <li key={index} className="w-56 mx-auto rounded-lg mb-1">
                 {item.submenu ? (
                   <div>
                     <button

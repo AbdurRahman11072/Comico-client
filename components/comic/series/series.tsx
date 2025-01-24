@@ -11,7 +11,7 @@ const Series = async () => {
   return (
     // All series cards
     <div className="container mx-auto">
-      <h1 className="text-2xl font-bold mb-10 p-2">All Series</h1>
+      <h1 className="text-3xl font-extrabold mb-2 p-2">All Series</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-4  gap-3 lg:gap-2 xl:gap-3 p-1 md:p-2 ">
         {seriesData.map((series: SeriesType) => (
@@ -37,7 +37,7 @@ const Series = async () => {
                     ? series.title.slice(0, 35) + "..."
                     : series.title}
                 </p>
-                <div className="flex justify-between items-center px-2 py-[5px] h-9 bg-slate-400/10 hover:md:bg-slate-400/10  rounded-sm">
+                <div className="flex justify-between items-center px-2 py-[5px] h-9  hover:md:bg-slate-400/10  rounded-sm">
                   <p className="text-sm font-medium md:font-semibold xl:text-md ">
                     Chapter 1000
                   </p>
@@ -45,7 +45,7 @@ const Series = async () => {
                     1 Days
                   </p>
                 </div>
-                <div className="flex justify-between items-center px-2 py-[5px] h-9 bg-slate-400/10 hover:md:bg-slate-400/10  rounded-sm">
+                <div className="flex justify-between items-center px-2 py-[5px] h-9 hover:md:bg-slate-400/10  rounded-sm">
                   <p className="text-sm font-medium md:font-semibold xl:text-md ">
                     Chapter 1000
                   </p>

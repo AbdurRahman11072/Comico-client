@@ -14,12 +14,12 @@ const Footer = () => {
               height={40}
               className="w-10 h-10"
             /> */}
-          <h2 className="text-2xl font-medium">Vortex Scans</h2>
+          <h2 className="text-2xl font-medium">Comico</h2>
         </div>
 
         {/* Tagline */}
         <p className="text-gray-400 max-w-2xl font-light">
-          Read Comics, manga, manhua, manhwa, translated swiftly: Vortex, your
+          Read Comics, manga, manhua, manhwa, translated swiftly: Comico, your
           ultimate library.
         </p>
 
@@ -49,13 +49,13 @@ const Footer = () => {
         {/* Credits */}
         <div className="flex flex-col items-center gap-1 text-sm text-gray-400 font-light space-y-4">
           <Link
-            href="https://vdev.com"
+            href="https://facebook.com"
             className="text-blue-500 hover:text-blue-400 transition-colors duration-200 font-medium"
           >
-            Made by V DEV
+            Made by Abdur Rahman
           </Link>
           <p>© 2025 All Rights Reserved</p>
-          <p className="text-xs font-normal">v0.9.B</p>
+          <p className="text-xs font-normal">v0.1.B</p>
         </div>
       </div>
     </footer>
