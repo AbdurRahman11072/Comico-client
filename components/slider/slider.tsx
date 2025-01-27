@@ -113,8 +113,8 @@ const ComicSlider1 = () => {
   }, [currentIndex, isMobile]);
 
   return (
-    <div className="relative mt-14 overflow-hidden">
-      <h1 className="text-3xl font-extrabold ml-5 mb-4">Featured Manhua</h1>
+    <div className="relative mt-14 overflow-hidden bg-gradient-to-r from-[#01062b] to-[#0e0f0f]/70 rounded-md px-2 py-4">
+      <h1 className="text-3xl font-extrabold ml-5 mb-10">Featured Manhua</h1>
       <div className="relative w-full">
         <div
           ref={sliderRef}

@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 import Link from "next/link";
 import { Config } from "@/utils/config";
 import { SeriesType } from "@/types";
+
 const Series = async () => {
   const res = await fetch(`${Config.baseUrl}/series`);
   const seriesData = await res.json();
@@ -13,10 +14,10 @@ const Series = async () => {
     <div className="container mx-auto">
       <h1 className="text-3xl font-extrabold mb-2 p-2">All Series</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-4  gap-3 lg:gap-2 xl:gap-3 p-1 md:p-2 ">
+      <div className="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-4  gap-3 row-span-4 lg:gap-2 xl:gap-3 p-1 md:p-2 ">
         {seriesData.map((series: SeriesType) => (
           <Link href={`/${series.id}`} key={series.id}>
-            <div className=" gap-2 ">
+            <div className=" gap-2 my-3">
               <Image
                 src={series.coverImg}
                 alt="comic-series-image"
@@ -32,9 +33,9 @@ const Series = async () => {
                   </h5>
                   <h5>{series.status}</h5>
                 </div>
-                <p className="font-semibold text-sm md:text-xl text-center px-1 my-2">
+                <p className="font-semibold text-sm md:text-sm lg:text-xl text-center px-0.5 my-2  ">
                   {series.title.length > 20
-                    ? series.title.slice(0, 35) + "..."
+                    ? series.title.slice(0, 33) + "..."
                     : series.title}
                 </p>
                 <div className="flex justify-between items-center px-2 py-[5px] h-9  hover:md:bg-slate-400/10  rounded-sm">

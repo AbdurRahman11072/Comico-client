@@ -295,6 +295,22 @@
       "likes": 25000,
       "coverImg": "https://i.ibb.co.com/60y8zgr/image.png",
       "sliderImage": "https://i.ibb.co.com/r6tqb0x/The-Descent-of-the-Demonic-Master-Thumb.webp"
+    },
+    {
+      "id": "6",
+      "title": "Demon Decendent",
+      "chineseTitle": "示例漫画系列",
+      "description": "A thrilling series of adventure and mystery.",
+      "genres": ["adventure", "fantasy", "mystery"],
+      "author": "John Doe",
+      "artist": "Jane Smith",
+      "status": "Ongoing",
+      "releaseDate": "2025-01-01",
+      "rating": 4.8,
+      "views": 500000,
+      "likes": 25000,
+      "coverImg": "https://i.ibb.co.com/4tZm2Sq/Juvenile-Law29.webp",
+      "sliderImage": "https://i.ibb.co.com/r6tqb0x/The-Descent-of-the-Demonic-Master-Thumb.webp"
     }
   ]
 }
