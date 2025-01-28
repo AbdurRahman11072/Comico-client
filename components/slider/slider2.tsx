@@ -1,5 +1,5 @@
 "use client";
-
+import { useGetsliderQuery } from "@/redux/api/baseapi";
 import * as React from "react";
 
 interface Comic {
@@ -11,44 +11,25 @@ interface Comic {
   tags: string[];
 }
 
-const comics: Comic[] = [
-  {
-    id: 1,
-    title: "Return Of The Genius Player",
-    image: "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
-    isHot: true,
-    tags: ["Action", "Shounen", "Manhwa"],
-  },
-  {
-    id: 2,
-    title: "Apocalyptic Chef Awakening",
-    image:
-      "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
-    isNew: true,
-    tags: ["Action", "Adventure"],
-  },
-  {
-    id: 3,
-    title: "Necromancer Academy And The Genius",
-    image: "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
-    isNew: true,
-    tags: ["Action", "Drama", "Shounen"],
-  },
-  {
-    id: 4,
-    title: "Apocalyptic Chef Awakening",
-    image:
-      "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
-    isNew: true,
-    tags: ["Action", "Adventure"],
-  },
-];
-
 export default function ComicSlider() {
+  const { data, isLoading, isError } = useGetsliderQuery({});
+  const SliderData = data;
+  console.log(data);
+
+  if (isLoading) {
+    return <div className="text-5xl text-white">Loading...</div>;
+  }
+
+  if (isError) {
+    return (
+      <div className="text-5xl text-white">Error loading series data.</div>
+    );
+  }
+
   return (
     <div className="container mx-auto overflow-hidden bg-black p-4 mt-14">
       <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
-        {comics.map((comic) => (
+        {SliderData?.map((comic: Comic) => (
           <div
             key={comic.id}
             className="relative w-full snap-start md:w-[calc(50%-8px)] lg:w-[calc(33.333%-12px)] flex-shrink-0"

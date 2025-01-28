@@ -2,27 +2,31 @@
   "slider": [
     {
       "id": 1,
-      "title": "Demon Hunter",
-      "coverImg": "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
-      "tags": ["Action", "Comedy", "Adventure"]
+      "title": "Return Of The Genius Player",
+      "image": "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
+      "isHot": true,
+      "tags": ["Action", "Shounen", "Manhwa"]
     },
     {
       "id": 2,
-      "title": "Overlord of the underworld",
-      "coverImg": "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
-      "tags": ["Drama", "Mystery"]
+      "title": "Apocalyptic Chef Awakening",
+      "image": "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+      "isNew": true,
+      "tags": ["Action", "Adventure"]
     },
     {
       "id": 3,
-      "title": "Squed Game",
-      "coverImg": "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
-      "tags": ["Fantasy", "Sci-Fi"]
+      "title": "Necromancer Academy And The Genius",
+      "image": "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
+      "isNew": true,
+      "tags": ["Action", "Drama", "Shounen"]
     },
     {
       "id": 4,
-      "title": "Squed Game",
-      "coverImg": "https://i.ibb.co.com/QvJCTMx/sliderimg1.webp",
-      "tags": ["Fantasy", "Sci-Fi"]
+      "title": "Apocalyptic Chef Awakening",
+      "image": "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+      "isNew": true,
+      "tags": ["Action", "Adventure"]
     }
   ],
   "chapters": [
