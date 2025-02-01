@@ -22,7 +22,7 @@ const SeriesCards = () => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-4  gap-3 row-span-4 lg:gap-2 xl:gap-3 p-1 md:p-2 ">
       {seriesData.map((series: SeriesType) => (
-        <Link href={`/${series.id}`} key={series.id}>
+        <Link href={`/series/${series.id}`} key={series.id}>
           <div className=" gap-2 my-3 group">
             <Image
               src={series.coverImg}

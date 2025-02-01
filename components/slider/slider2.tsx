@@ -14,7 +14,6 @@ interface Comic {
 export default function ComicSlider() {
   const { data, isLoading, isError } = useGetsliderQuery({});
   const SliderData = data;
-  console.log(data);
 
   if (isLoading) {
     return <div className="text-5xl text-white">Loading...</div>;
@@ -27,7 +26,7 @@ export default function ComicSlider() {
   }
 
   return (
-    <div className="container mx-auto overflow-hidden bg-black p-4 mt-14">
+    <div className="container mx-auto overflow-hidden bg-black p-4 ">
       <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
         {SliderData?.map((comic: Comic) => (
           <div

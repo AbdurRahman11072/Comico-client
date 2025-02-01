@@ -1,9 +1,19 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Footer = () => {
+  const pathname = usePathname();
+  const showNavbar = !pathname.match(/^\/[^/]\/[^/]+/);
+  console.log(showNavbar);
+
   return (
-    <footer className="bg-black text-white py-8 px-4">
+    <footer
+      className={`${
+        !showNavbar ? "hidden" : "bg-black text-white py-8 px-4"
+      } w-full bg-black py-10`}
+    >
       <div className="container mx-auto flex flex-col items-center gap-6 text-center">
         {/* Logo and Title */}
         <div className="flex items-center gap-2">

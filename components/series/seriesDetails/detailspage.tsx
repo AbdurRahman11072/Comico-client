@@ -1,16 +1,13 @@
-import MainContent from "@/components/comicDetails/main-content";
-import { Sidebar } from "@/components/comicDetails/sidebar";
-import { SeriesType } from "@/types";
-import { Config } from "@/utils/config";
+"use client";
+import React from "react";
+import { Sidebar } from "./sidebar";
+import MainContent from "./main-content";
+import { useGetSingleSeriesQuery } from "@/redux/api/baseapi";
 
-type params = {
-  id: number;
-};
-
-const ComicDetailPage = async ({ params }: { params: params }) => {
-  const { id } = await params;
-  const res = await fetch(`${Config.baseUrl}/series/${id}`);
-  const SeriesDetails: SeriesType = await res.json();
+const DetailsPage = ({ id }: { id: number }) => {
+  const { data, isLoading, isError } = useGetSingleSeriesQuery(id);
+  const SeriesDetails = data;
+  console.log(SeriesDetails);
 
   const {
     title,
@@ -25,6 +22,13 @@ const ComicDetailPage = async ({ params }: { params: params }) => {
   const Details = { coverImg, rating, status };
   const mainDetails = { id, title, chineseTitle, description };
 
+  if (isLoading) {
+    return <div>Loading</div>;
+  }
+  if (isError) {
+    return <div>Error</div>;
+  }
+
   return (
     <main className="min-h-screen relative ">
       <div className=" w-full h-screen overflow-hidden">
@@ -33,12 +37,14 @@ const ComicDetailPage = async ({ params }: { params: params }) => {
       </div>
       <div className="absolute inset-0 top-20 mx-auto px-4 py-6 ">
         <div className="grid md:grid-cols-[300px_1fr] gap-8">
-          <Sidebar Details={Details} />
-          <MainContent mainDetails={mainDetails} />
+          <div className="grid md:grid-cols-[300px_1fr] gap-8">
+            <Sidebar Details={Details} />
+            <MainContent mainDetails={mainDetails} />
+          </div>
         </div>
       </div>
     </main>
   );
 };
 
-export default ComicDetailPage;
+export default DetailsPage;
