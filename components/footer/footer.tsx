@@ -6,7 +6,6 @@ import React from "react";
 const Footer = () => {
   const pathname = usePathname();
   const showNavbar = !pathname.match(/^\/[^/]\/[^/]+/);
-  console.log(showNavbar);
 
   return (
     <footer

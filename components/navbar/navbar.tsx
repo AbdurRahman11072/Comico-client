@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   const showNavbar = !pathname.match(/^\/[^/]\/[^/]+/);
-  console.log(showNavbar);
 
   return (
     <div className="w-full bg-blue-950/50 mx-auto">

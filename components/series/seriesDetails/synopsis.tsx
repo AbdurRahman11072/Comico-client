@@ -4,7 +4,7 @@ type description = {
 export function Synopsis(description: description) {
   return (
     <div className="space-y-6">
-      <div className="bg-slate-200/20 rounded-lg p-6">
+      <div className="bg-gray-900/50 rounded-lg p-6">
         <h2 className="text-xl font-semibold mb-4">Summary</h2>
         <p className="text-gray-300 leading-relaxed">
           {description?.description}
@@ -12,7 +12,7 @@ export function Synopsis(description: description) {
         <button className="text-purple-400 mt-2">Show more</button>
       </div>
 
-      <div className="bg-slate-200/20 rounded-lg p-6">
+      <div className="bg-gray-900/50 rounded-lg p-6">
         <h2 className="text-xl font-semibold mb-4">Published by</h2>
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 bg-gray-800 rounded-full" />

@@ -18,7 +18,7 @@ export default function RootLayout({
       <html lang="en">
         <body className="">
           <Navbar />
-          <main className="mt-14">{children}</main>
+          <main className=" overflow-scroll mt-14">{children}</main>
           <Footer />
         </body>
       </html>

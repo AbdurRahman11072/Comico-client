@@ -11,7 +11,7 @@ const ChapterList = ({ chapterData }: { chapterData: Chapter[] }) => {
       {chapterData.map((chapter) => (
         <div
           key={chapter.chapterId}
-          className="chapter-row flex items-center gap-4 p-4 rounded-lg cursor-pointer bg-slate-200/10"
+          className="chapter-row flex items-center gap-4 p-4 rounded-lg cursor-pointer bg-gray-900/50"
         >
           <div className="w-12 h-12 bg-gray-800 rounded-md flex-shrink-0" />
           <div className="flex-grow">
