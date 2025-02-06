@@ -37,10 +37,8 @@ const DetailsPage = ({ id }: { id: number }) => {
       </div>
       <div className="absolute inset-0 top-20 mx-auto px-4 py-6 ">
         <div className="grid md:grid-cols-[300px_1fr] gap-8">
-          <div className="grid md:grid-cols-[300px_1fr] gap-8">
-            <Sidebar Details={Details} />
-            <MainContent mainDetails={mainDetails} />
-          </div>
+          <Sidebar Details={Details} />
+          <MainContent mainDetails={mainDetails} />
         </div>
       </div>
     </main>

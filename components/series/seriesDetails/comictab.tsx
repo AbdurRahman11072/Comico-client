@@ -15,8 +15,8 @@ const ComicTab = ({ details }: { details: details }) => {
   const chapterData = details.chapterdata;
   const [activeTab, setActiveTab] = useState("synopsis");
   return (
-    <div>
-      <nav className="flex gap-8">
+    <div className="">
+      <nav className="flex gap-8 ">
         <button
           onClick={() => setActiveTab("synopsis")}
           className={`nav-tab py-4 ${activeTab === "synopsis" ? "active" : ""}`}

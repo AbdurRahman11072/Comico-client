@@ -39,9 +39,9 @@ const SeriesCards = () => {
                 </h5>
                 <h5>{series.status}</h5>
               </div>
-              <p className="font-semibold text-sm md:text-sm lg:text-xl text-center px-0.5 my-2  ">
+              <p className="font-semibold text-sm md:text-sm lg:text-md text-center px-0.5 my-2  ">
                 {series.title.length > 20
-                  ? series.title.slice(0, 33) + "..."
+                  ? series.title.slice(0, 25) + "..."
                   : series.title}
               </p>
               <div className="flex justify-between items-center px-2 py-[5px] h-9  hover:md:bg-slate-400/10  rounded-sm">

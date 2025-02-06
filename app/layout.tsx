@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <ReduxProvider>
       <html lang="en">
-        <body className="">
+        <body className="flex flex-col">
           <Navbar />
-          <main className="mt-14">{children}</main>
+          <main className=" flex-grow">{children}</main>
           <Footer />
         </body>
       </html>

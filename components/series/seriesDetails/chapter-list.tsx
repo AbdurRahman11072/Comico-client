@@ -7,7 +7,7 @@ const ChapterList = ({ chapterData }: { chapterData: Chapter[] }) => {
   }
 
   return (
-    <div className="space-y-2 overflow-y-scroll snap-y snap-mandatory lg:h-[500px]">
+    <div className="space-y-2 h-[600px] overflow-scroll">
       {chapterData.map((chapter) => (
         <div
           key={chapter.chapterId}

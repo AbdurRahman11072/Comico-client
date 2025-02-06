@@ -3,7 +3,7 @@ type description = {
 };
 export function Synopsis(description: description) {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 ">
       <div className="bg-gray-900/50 rounded-lg p-6">
         <h2 className="text-xl font-semibold mb-4">Summary</h2>
         <p className="text-gray-300 leading-relaxed">

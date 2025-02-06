@@ -14,13 +14,42 @@ const FeatureSlider = () => {
   return (
     <div className="w-full p-4 space-y-5">
       <h1 className="text-4xl font-semibold">Feature</h1>
-      <Swiper slidesPerView={5.4} spaceBetween={10} className="flex gap-4">
+      <Swiper
+        slidesPerView={5.4}
+        spaceBetween={10}
+        breakpoints={{
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+          425: {
+            slidesPerView: 2.4,
+            spaceBetween: 6,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 6,
+          },
+          1024: {
+            slidesPerView: 4.5,
+            spaceBetween: 8,
+          },
+          1280: {
+            slidesPerView: 5.4,
+            spaceBetween: 10,
+          },
+        }}
+        className="flex gap-4"
+      >
         {feature.map((item: SeriesType) => (
-          <SwiperSlide className="space-y-2 relative group overflow-hidden perspective-100">
+          <SwiperSlide
+            key={item.id}
+            className="space-y-2 relative group overflow-hidden perspective-100"
+          >
             <img
               src={item.coverImg}
               alt=""
-              className="w-full h-80 rounded-md object-cover group-hover:rotate-x-25 transition-all duration-500"
+              className="w-full h-60 lg:h-72 rounded-md object-cover lg:group-hover:rotate-x-25 transition-all duration-500"
             />
 
             <div className="absolute bottom-0 left-0 right-0 top p-4 bg-gradient-to-t from-black/90 via-black/90 to-transparent justify-center items-center">
@@ -28,9 +57,9 @@ const FeatureSlider = () => {
                 <img
                   src="https://i.ibb.co.com/DbDF9mh/image-7.webp"
                   alt=""
-                  className="object-cover w-[80%] rounded-lg hidden group-hover:block mx-auto transition-all duration-500  group-hover:mb-0 group-hover:bg-transparent group-hover:mt-4"
+                  className="object-cover w-[78%] rounded-lg hidden lg:group-hover:block mx-auto transition-all duration-500  group-hover:mb-0 group-hover:bg-transparent group-hover:mt-4"
                 />
-                <h3 className="text-lg font-semibold text-white line-clamp-2 text-center h-16 -mt-3">
+                <h3 className="hidden lg:block text-lg font-semibold text-white line-clamp-2 text-center h-16 -mt-3">
                   {item.title}
                 </h3>
               </div>

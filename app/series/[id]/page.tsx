@@ -4,6 +4,7 @@ import MainContent from "@/components/series/seriesDetails/main-content";
 import { Sidebar } from "@/components/series/seriesDetails/sidebar";
 import { SeriesType } from "@/types";
 import { Config } from "@/utils/config";
+import Image from "next/image";
 
 type params = {
   id: number;
@@ -28,19 +29,16 @@ const ComicDetailPage = async ({ params }: { params: params }) => {
   const mainDetails = { id, title, chineseTitle, description };
 
   return (
-    <div>
-      <main className="m-h-screen relative ">
-        <div className=" w-full h-screen overflow-hidden">
-          <img src={coverImg} alt={title} className="w-full " />
-          <div className="absolute inset-0 w-full h-screen bg-gradient-to-t from-black via-black/80 to-black/60 "></div>
-        </div>
-        <div className="absolute inset-0  mx-auto px-4 py-6 ">
-          <div className="grid md:grid-cols-[300px_1fr] gap-8">
-            <Sidebar Details={Details} />
-            <MainContent mainDetails={mainDetails} />
-          </div>
-        </div>
-      </main>
+    <div className="relative mb-10">
+      <div
+        className="absolute inset-0 h-screen  bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${coverImg})` }}
+      ></div>
+      <div className="absolute  inset-0 h-screen bg-gradient-to-t from-black via-black/80 to-black/60"></div>
+      <div className="relative grid md:grid-cols-[300px_1fr] gap-8 p-8 pt-20">
+        <Sidebar Details={Details} />
+        <MainContent mainDetails={mainDetails} />
+      </div>
     </div>
   );
 };
