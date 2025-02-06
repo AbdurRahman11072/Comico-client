@@ -27,10 +27,10 @@ export function Reviews() {
   ];
 
   return (
-    <div className="space-y-6  h-[600px] overflow-scroll">
+    <div className="space-y-6  ">
       <div className="bg-gray-900/50 rounded-lg p-6">
         <h2 className="text-xl font-semibold mb-4">Reviews</h2>
-        <div className="space-y-4">
+        <div className="space-y-4 h-[370px] overflow-y-auto">
           {reviews.map((review) => (
             <div
               key={review.id}

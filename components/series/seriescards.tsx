@@ -39,7 +39,7 @@ const SeriesCards = () => {
                 </h5>
                 <h5>{series.status}</h5>
               </div>
-              <p className="font-semibold text-sm md:text-sm lg:text-md text-center px-0.5 my-2  ">
+              <p className=" h-12 flex justify-center items-center font-semibold text-sm md:text-sm lg:text-lg text-center px-0.5 my-2  ">
                 {series.title.length > 20
                   ? series.title.slice(0, 25) + "..."
                   : series.title}

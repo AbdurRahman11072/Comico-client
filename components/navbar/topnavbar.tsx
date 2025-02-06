@@ -14,11 +14,11 @@ const TopNavBar = () => {
   const [isProfileModalOpen, setIsProfileModalOpen] = useState(false);
 
   return (
-    <div className="fixed top-0  z-50 bg-blue-950/50 flex w-full h-14">
+    <div className="fixed top-0  z-50 bg-black/60 flex w-full h-14">
       <div className="w-full container mx-auto flex gap-4 items-center justify-between px-3 border-b border-gray-500">
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center ">
           <h1 className="text-2xl font-bold text-white">Comico</h1>
-          <ul className="hidden md:flex gap-5 text-lg font-medium text-white">
+          <ul className="hidden md:flex gap-5 text-md font-medium text-white mt-1">
             <Link href="/">
               <li>Home</li>
             </Link>

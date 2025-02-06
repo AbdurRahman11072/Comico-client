@@ -31,7 +31,7 @@ const ComicDetailPage = async ({ params }: { params: params }) => {
   return (
     <div className="relative mb-10">
       <div
-        className="absolute inset-0 h-screen  bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 h-screen  bg-cover  bg-no-repeat"
         style={{ backgroundImage: `url(${coverImg})` }}
       ></div>
       <div className="absolute  inset-0 h-screen bg-gradient-to-t from-black via-black/80 to-black/60"></div>

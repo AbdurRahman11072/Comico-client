@@ -161,6 +161,70 @@
             "https://example.com/comics/12345/chapters/3/images/2.jpg",
             "https://example.com/comics/12345/chapters/3/images/3.jpg"
           ]
+        },
+        {
+          "chapterId": "9",
+          "chapter": "Chapter 4",
+          "chapterTitle": "The Beginning",
+          "releaseDate": "2025-01-01",
+          "views": 10500,
+          "likes": 1500,
+          "timestamp": "2025-01-01T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/1",
+          "tags": ["adventure", "fantasy"],
+          "images": [
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp"
+          ]
+        },
+        {
+          "chapterId": "10",
+          "chapter": "Chapter 5",
+          "chapterTitle": "The Journey",
+          "releaseDate": "2025-01-08",
+          "views": 8900,
+          "likes": 1200,
+          "timestamp": "2025-01-08T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/2",
+          "tags": ["adventure", "drama"],
+          "images": [
+            "https://example.com/comics/12345/chapters/2/images/1.jpg",
+            "https://example.com/comics/12345/chapters/2/images/2.jpg",
+            "https://example.com/comics/12345/chapters/2/images/3.jpg"
+          ]
+        },
+        {
+          "chapterId": "11",
+          "chapter": "Chapter 6",
+          "chapterTitle": "The Beginning",
+          "releaseDate": "2025-01-01",
+          "views": 10500,
+          "likes": 1500,
+          "timestamp": "2025-01-01T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/1",
+          "tags": ["adventure", "fantasy"],
+          "images": [
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp",
+            "https://i.ibb.co.com/9hBwxK1/8e4f7dd1-aa7d-4791-9380-ca8f93b3b6dc.webp"
+          ]
+        },
+        {
+          "chapterId": "12",
+          "chapter": "Chapter 7",
+          "chapterTitle": "The Journey",
+          "releaseDate": "2025-01-08",
+          "views": 8900,
+          "likes": 1200,
+          "timestamp": "2025-01-08T00:00:00Z",
+          "contentUrl": "https://example.com/comics/12345/chapters/2",
+          "tags": ["adventure", "drama"],
+          "images": [
+            "https://example.com/comics/12345/chapters/2/images/1.jpg",
+            "https://example.com/comics/12345/chapters/2/images/2.jpg",
+            "https://example.com/comics/12345/chapters/2/images/3.jpg"
+          ]
         }
       ]
     },
