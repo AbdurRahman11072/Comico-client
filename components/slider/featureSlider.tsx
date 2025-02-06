@@ -13,7 +13,10 @@ const FeatureSlider = () => {
   }
   return (
     <div className="w-full p-4 space-y-5">
-      <h1 className="text-4xl font-semibold">Feature</h1>
+      <div className="flex gap-3 ">
+        <span className="w-[6px] bg-purple-800 rounded-sm"></span>
+        <h1 className="text-4xl font-semibold">Feature</h1>
+      </div>
       <Swiper
         slidesPerView={5.4}
         spaceBetween={10}
@@ -31,11 +34,11 @@ const FeatureSlider = () => {
             spaceBetween: 6,
           },
           1024: {
-            slidesPerView: 4.5,
+            slidesPerView: 5,
             spaceBetween: 8,
           },
           1280: {
-            slidesPerView: 5.4,
+            slidesPerView: 6,
             spaceBetween: 10,
           },
         }}

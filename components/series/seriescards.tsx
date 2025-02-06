@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SeriesType } from "@/types";
 import { useGetSeriesQuery } from "@/redux/api/baseapi";
 
-const SeriesCards = () => {
+const SeriesCards = ({ seriesStyle }: { seriesStyle: string }) => {
   const { data, isLoading, isError } = useGetSeriesQuery({});
   const seriesData = data;
 
@@ -20,7 +20,7 @@ const SeriesCards = () => {
     );
   }
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4  lg:grid-cols-4  gap-3 row-span-4 lg:gap-2 xl:gap-3 p-1 md:p-2 ">
+    <div className={`${seriesStyle}`}>
       {seriesData.map((series: SeriesType) => (
         <Link href={`/series/${series.id}`} key={series.id}>
           <div className=" gap-2 my-3 group">
@@ -41,19 +41,19 @@ const SeriesCards = () => {
               </div>
               <p className=" h-12 flex justify-center items-center font-semibold text-sm md:text-sm lg:text-lg text-center px-0.5 my-2  ">
                 {series.title.length > 20
-                  ? series.title.slice(0, 25) + "..."
+                  ? series.title.slice(0, 34) + "..."
                   : series.title}
               </p>
-              <div className="flex justify-between items-center px-2 py-[5px] h-9  hover:md:bg-slate-400/10  rounded-sm">
-                <p className="text-sm font-medium md:font-semibold xl:text-md ">
+              <div className="flex justify-between items-center px-2 py-[5px] h-9 hover:md:bg-slate-400/10 border border-slate-600/40 rounded-md">
+                <p className="text-sm font-medium md:font-semibold xl:text-md  ">
                   Chapter 1000
                 </p>
                 <p className="font-medium text-xs md:text-sm lg:text-xs xl:text-sm ">
                   1 Days
                 </p>
               </div>
-              <div className="flex justify-between items-center px-2 py-[5px] h-9 hover:md:bg-slate-400/10  rounded-sm">
-                <p className="text-sm font-medium md:font-semibold xl:text-md ">
+              <div className="flex justify-between items-center px-2 py-[5px] h-9 hover:md:bg-slate-400/10 border border-slate-600/40 rounded-md">
+                <p className="text-sm font-medium md:font-semibold xl:text-md  ">
                   Chapter 1000
                 </p>
                 <p className="font-medium text-xs md:text-sm lg:text-xs xl:text-sm ">
